@@ -55,46 +55,5 @@ class Game
 
     end
   end
-   
-
 end
 
-class Player
-  attr_accessor :lives, :name
-
-  def initialize (name)
-    @lives = 3
-    @name = name
-  end
-
-end
-
-class Question
-
-  attr_accessor :answer
-
-  def initialize ()
-    @number1 = rand(1..10)
-    @number2 = rand(1..10)
-  end
-
-  def ask_question()
-    "What does #{@number1} plus #{@number2} equal"
-
-  end
-
-  def get_answer()
-    @answer = @number1 + @number2
-  end
-end
-
-
-g = Game.new()
-g.start_game
-
-# print "How old are you? "
-# age = gets.chomp
-# print "How tall are you? "
-# height = gets.chomp
-# print "How much do you weigh? "
-# weight = gets.chomp
